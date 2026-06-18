@@ -7,14 +7,13 @@ class Rectangle {
   Rectangle(this.width, this.height);
 
   //Method
-  void area() {
-    print(
-      'The area of rectangle with width of $width & height of $height is ${width * height}',
-    );
+  double area() {
+    return width * height;
   }
 }
 
 void main() {
   var rectangle1 = Rectangle(5, 3);
-  rectangle1.area();
+  double rectArea = rectangle1.area();
+  print('Area of rectangle: $rectArea');
 }
